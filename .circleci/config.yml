@@ -1,0 +1,9 @@
+version: 2
+jobs:
+ build:
+  working_directory: ~/js
+   docker:
+    -image: circleci/node:7
+   steps:
+    -chechout
+    - run: npm test
